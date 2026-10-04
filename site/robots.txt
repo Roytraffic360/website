@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://traffik360.com/sitemap.xml
