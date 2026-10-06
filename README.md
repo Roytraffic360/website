@@ -21,4 +21,6 @@ Source for the Traffik360 website, English and Arabic.
 - "600+ orders a year" is derived from Zoho CRM sales orders 2023 to 2025: confirm against Zoho Books.
 - Paste the Zoho Forms embed into `brief()` in `tools/build.py` (marked `ZOHO_FORM_EMBED`).
 - Privacy policy text needs legal review.
-- Colours and type are a proposal until the brand files are confirmed (tokens at the top of `site/assets/site.css`).
+- Official logos are in `site/assets/brand/` (trimmed from the Studio360 files). Official orange is #FF5400.
+  `t360-logo-colour-on-dark.svg` is derived (white instead of black) and needs Studio360 approval before use.
+- Clan Pro font: web font files and licence still needed.
