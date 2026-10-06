@@ -44,7 +44,11 @@ STR = {
     "foot.beirut": {"en": "Beirut", "ar": "بيروت"},
     "foot.dxb.addr": {"en": "Thuraya Tower, Office 805<br>Barsha Heights (TECOM), Dubai",
                       "ar": "برج الثريا، مكتب 805<br>برشا هايتس (تيكوم)، دبي"},
-    "foot.addr.tbc": {"en": "[Address]<br>[Phone]", "ar": "[العنوان]<br>[الهاتف]"},
+    "foot.riyadh.sub": {"en": "KSA partner", "ar": "الشريك في السعودية"},
+    "foot.jed.addr": {"en": "Al Ebdaa Al Hadif Advertising<br>CR 4030135362<br>Al Ghaidaa Time Tower, M Floor, Office 3<br>Sari Street, Al Khalidiyah, Jeddah<br><a class=\"ltr\" href=\"tel:+966126061393\">+966 12 606 1393</a><br><a class=\"ltr\" href=\"mailto:info@ebdaaalhadif-t360.com\">info@ebdaaalhadif-t360.com</a><br>Contact: Jaber Al-Qarni",
+                      "ar": "<span dir=\"ltr\">Al Ebdaa Al Hadif Advertising</span><br>السجل التجاري <span class=\"ltr\">4030135362</span><br>برج الغيداء تايم، دور الميزانين، مكتب 3<br>شارع صاري، حي الخالدية، جدة<br><a class=\"ltr\" href=\"tel:+966126061393\">+966 12 606 1393</a><br><a class=\"ltr\" href=\"mailto:info@ebdaaalhadif-t360.com\">info@ebdaaalhadif-t360.com</a><br>جهة الاتصال: جابر القرني"},
+    "foot.bey.addr": {"en": "Traffik360 SAL<br>Jdeideh Tower, 3rd Floor<br>Fost Street, Jdeideh, Lebanon<br><a class=\"ltr\" href=\"tel:+9611883607\">+961 1 883 607</a><br><a class=\"ltr\" href=\"mailto:beirut360@traffik360.com\">beirut360@traffik360.com</a>",
+                      "ar": "<span dir=\"ltr\">Traffik360 SAL</span><br>برج الجديدة، الطابق الثالث<br>شارع فوست، الجديدة، لبنان<br><a class=\"ltr\" href=\"tel:+9611883607\">+961 1 883 607</a><br><a class=\"ltr\" href=\"mailto:beirut360@traffik360.com\">beirut360@traffik360.com</a>"},
     "foot.privacy": {"en": "Privacy policy", "ar": "سياسة الخصوصية"},
     "foot.rights": {"en": "© 2026 Traffik360", "ar": "© 2026 Traffik360"},
     "doors.h": {"en": "Two ways to start.", "ar": "طريقتان للبدء."},
@@ -383,8 +387,8 @@ def builder(lang):
 <p class="mt-s"><a href="mailto:{EMAIL}" class="ltr">{EMAIL}</a><br><a href="#whatsapp">{t("foot.whatsapp")}</a></p>
 </div>
 <div class="foot-col"><h2>{t("foot.dubai")}</h2><p>{t("foot.dxb.addr")}<br><a class="ltr" href="tel:+97144534033">{PHONE_DXB}</a></p></div>
-<div class="foot-col"><h2>{t("foot.riyadh")}</h2><p>{t("foot.addr.tbc")}</p></div>
-<div class="foot-col"><h2>{t("foot.beirut")}</h2><p>{t("foot.addr.tbc")}</p></div>
+<div class="foot-col"><h2>{t("foot.riyadh")} · {t("foot.riyadh.sub")}</h2><p>{t("foot.jed.addr")}</p></div>
+<div class="foot-col"><h2>{t("foot.beirut")}</h2><p>{t("foot.bey.addr")}</p></div>
 </div>
 <div class="foot-bottom">
 <span dir="ltr">{t("foot.rights")}</span>
@@ -604,8 +608,8 @@ def builder(lang):
     def about():
         values = "".join(tile(t(f"about.v{i}.h"), t(f"about.v{i}.p")) for i in range(1, 5))
         offices = (tile(t("foot.dubai"), t("foot.dxb.addr").replace("<br>", ", ")) +
-                   tile(t("foot.riyadh"), t("foot.addr.tbc").replace("<br>", ", ")) +
-                   tile(t("foot.beirut"), t("foot.addr.tbc").replace("<br>", ", ")))
+                   tile(t("foot.riyadh"), t("foot.jed.addr")) +
+                   tile(t("foot.beirut"), t("foot.bey.addr")))
         return f'''{page_hero(t("nav.about"), t("about.h1"), t("about.lead"), cta=False)}
 <section class="section" aria-labelledby="val-h">
 <div class="wrap"><h2 id="val-h" class="h2">{t("about.values.h")}</h2><div class="row mt-m" style="gap:16px">{values}</div></div>
