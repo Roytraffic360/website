@@ -336,7 +336,7 @@ STR = {
     "nf.home": {"en": "Go to the homepage", "ar": "انتقل إلى الصفحة الرئيسية"},
 }
 
-CLIENTS = ["L'ORÉAL", "Unilever", "Kenvue", "Saudi Tourism", "MDL Beast", "Konica Minolta", "Visa", "Henkel"]
+CLIENTS = ["L'ORÉAL", "Unilever", "Kenvue", "Saudi Tourism", "MDL Beast", "Diageo", "Konica Minolta", "Visa", "Henkel"]  # Diageo: logo only, no projects or imagery
 
 e = html.escape
 

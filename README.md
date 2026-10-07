@@ -22,5 +22,5 @@ Source for the Traffik360 website, English and Arabic.
 - Paste the Zoho Forms embed into `brief()` in `tools/build.py` (marked `ZOHO_FORM_EMBED`).
 - Privacy policy text needs legal review.
 - Official logos are in `site/assets/brand/` (trimmed from the Studio360 files). Official orange is #FF5400.
-  `t360-logo-colour-on-dark.svg` is derived (white instead of black) and needs Studio360 approval before use.
-- Clan Pro font: web font files and licence still needed.
+  `t360-logo-colour-on-dark.svg` (orange and white) is the approved logo for black backgrounds (Roy, 8 Oct).
+- Font is FF Clan Pro (decided). The files are Monotype desktop fonts: buy a Monotype web licence before adding them to `site/`.
