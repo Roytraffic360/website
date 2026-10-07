@@ -16,7 +16,7 @@ DOMAIN = "https://traffik360.com"
 GLOSSARY = "https://glossary.promo"
 LINKEDIN = "https://www.linkedin.com/company/traffik360/"
 PHONE_DXB = "+971 4 453 4033"
-EMAIL = "[briefs@traffik360.com]"
+EMAIL = "briefs@traffik360.com"
 
 PAGES = ["", "merchandise", "posm-displays", "activations", "work", "sectors",
          "sustainability", "about", "brief", "privacy"]
