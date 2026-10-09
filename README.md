@@ -23,4 +23,8 @@ Source for the Traffik360 website, English and Arabic.
 - Privacy policy text needs legal review.
 - Official logos are in `site/assets/brand/` (trimmed from the Studio360 files). Official orange is #FF5400.
   `t360-logo-colour-on-dark.svg` (orange and white) is the approved logo for black backgrounds (Roy, 8 Oct).
+- Master logo files from Studio360 (9 Oct) are in `brand/source/` (AI, EPS, colour versions PDF). Not published.
+  The master orange is the spot colour PANTONE Orange 021 C. Its RGB alternate in the AI file is #FF5100; the web uses #FF5400
+  from the brand sheet. The difference is about 1 Delta E, not visible. Print uses the Pantone, screens use #FF5400.
+  Still missing from Studio360: logo without the tagline and a square mark (tracker item 16).
 - Font is FF Clan Pro (decided). The files are Monotype desktop fonts: buy a Monotype web licence before adding them to `site/`.
