@@ -163,3 +163,4 @@ h1,h2,h3{font-family:var(--display);margin:0}
 .foot-bottom nav{display:flex;gap:20px;flex-wrap:wrap}
 .foot-bottom a{color:var(--on-dark)}
 .ltr{direction:ltr;unicode-bidi:isolate}
+.partner-logo{display:block;height:30px;width:auto;margin:0 0 12px;opacity:.9}

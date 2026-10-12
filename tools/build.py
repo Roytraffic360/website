@@ -45,8 +45,8 @@ STR = {
     "foot.dxb.addr": {"en": "Thuraya Tower, Office 805<br>Barsha Heights (TECOM), Dubai",
                       "ar": "برج الثريا، مكتب 805<br>برشا هايتس (تيكوم)، دبي"},
     "foot.riyadh.sub": {"en": "KSA partner", "ar": "الشريك في السعودية"},
-    "foot.jed.addr": {"en": "Al Ebdaa Al Hadif Advertising<br>CR 4030135362<br>Al Ghaidaa Time Tower, M Floor, Office 3<br>Sari Street, Al Khalidiyah, Jeddah<br><a class=\"ltr\" href=\"tel:+966126061393\">+966 12 606 1393</a><br><a class=\"ltr\" href=\"mailto:info@ebdaaalhadif-t360.com\">info@ebdaaalhadif-t360.com</a><br>Contact: Jaber Al-Qarni",
-                      "ar": "<span dir=\"ltr\">Al Ebdaa Al Hadif Advertising</span><br>السجل التجاري <span class=\"ltr\">4030135362</span><br>برج الغيداء تايم، دور الميزانين، مكتب 3<br>شارع صاري، حي الخالدية، جدة<br><a class=\"ltr\" href=\"tel:+966126061393\">+966 12 606 1393</a><br><a class=\"ltr\" href=\"mailto:info@ebdaaalhadif-t360.com\">info@ebdaaalhadif-t360.com</a><br>جهة الاتصال: جابر القرني"},
+    "foot.jed.addr": {"en": "Al Ebdaa Al Hadif Advertising (O&amp;C)<br>CR 4030135362<br>Al Ghaidaa Time Tower, M Floor, Office 3<br>Sari Street, Al Khalidiyah, Jeddah<br><a class=\"ltr\" href=\"tel:+966126061393\">+966 12 606 1393</a><br><a class=\"ltr\" href=\"mailto:info@ebdaaalhadif-t360.com\">info@ebdaaalhadif-t360.com</a><br>Contact: Jaber Al-Qarni",
+                      "ar": "مؤسسة الإبداع الهادف للدعاية والإعلان<br>السجل التجاري <span class=\"ltr\">4030135362</span><br>برج الغيداء تايم، دور الميزانين، مكتب 3<br>شارع صاري، حي الخالدية، جدة<br><a class=\"ltr\" href=\"tel:+966126061393\">+966 12 606 1393</a><br><a class=\"ltr\" href=\"mailto:info@ebdaaalhadif-t360.com\">info@ebdaaalhadif-t360.com</a><br>جهة الاتصال: جابر القرني"},
     "foot.bey.addr": {"en": "Traffik360 SAL<br>Jdeideh Tower, 3rd Floor<br>Fost Street, Jdeideh, Lebanon<br><a class=\"ltr\" href=\"tel:+9611883607\">+961 1 883 607</a><br><a class=\"ltr\" href=\"mailto:beirut360@traffik360.com\">beirut360@traffik360.com</a>",
                       "ar": "<span dir=\"ltr\">Traffik360 SAL</span><br>برج الجديدة، الطابق الثالث<br>شارع فوست، الجديدة، لبنان<br><a class=\"ltr\" href=\"tel:+9611883607\">+961 1 883 607</a><br><a class=\"ltr\" href=\"mailto:beirut360@traffik360.com\">beirut360@traffik360.com</a>"},
     "foot.privacy": {"en": "Privacy policy", "ar": "سياسة الخصوصية"},
@@ -387,7 +387,7 @@ def builder(lang):
 <p class="mt-s"><a href="mailto:{EMAIL}" class="ltr">{EMAIL}</a><br><a href="#whatsapp">{t("foot.whatsapp")}</a></p>
 </div>
 <div class="foot-col"><h2>{t("foot.dubai")}</h2><p>{t("foot.dxb.addr")}<br><a class="ltr" href="tel:+97144534033">{PHONE_DXB}</a></p></div>
-<div class="foot-col"><h2>{t("foot.riyadh")} · {t("foot.riyadh.sub")}</h2><p>{t("foot.jed.addr")}</p></div>
+<div class="foot-col"><h2>{t("foot.riyadh")} · {t("foot.riyadh.sub")}</h2><img class="partner-logo" src="/assets/brand/partner-oc-white.svg" alt="O&amp;C" width="92" height="30" loading="lazy"><p>{t("foot.jed.addr")}</p></div>
 <div class="foot-col"><h2>{t("foot.beirut")}</h2><p>{t("foot.bey.addr")}</p></div>
 </div>
 <div class="foot-bottom">
