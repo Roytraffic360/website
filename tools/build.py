@@ -71,6 +71,12 @@ STR = {
     "case.mdl.meta": {"en": "MDL Beast · Entertainment · KSA", "ar": "MDL Beast · الترفيه · السعودية"},
     "case.mdl.h": {"en": "Event merchandise delivered on site in AlUla", "ar": "منتجات فعالية سُلّمت في موقع الحدث في العُلا"},
     "case.mdl.ph": {"en": "[Photo: event merchandise on site]", "ar": "[صورة: منتجات الفعالية في الموقع]"},
+    "case.coke.meta": {"en": "Coca-Cola · Beverages · Saudi Arabia", "ar": "Coca-Cola · المشروبات · السعودية"},
+    "case.coke.h": {"en": "MIRWASI: a branded cheering drum for football fans, inspired by the marwas",
+                    "ar": "مرواسي: طبلة تشجيع تحمل العلامة لجماهير كرة القدم، مستوحاة من المرواس"},
+    "case.coke.sum": {"en": "For football fan events in Saudi Arabia in 2022, Coca-Cola wanted a giveaway rooted in local culture. We turned the marwas, the small hand drum of regional celebrations, into a branded cheering drum on a lanyard, from order in July to fan events in November.",
+                      "ar": "لفعاليات جماهير كرة القدم في السعودية عام 2022، أرادت Coca-Cola هدية مستوحاة من الثقافة المحلية. حوّلنا المرواس، الطبلة اليدوية الصغيرة في الاحتفالات الإقليمية، إلى طبلة تشجيع تحمل العلامة مع حبل تعليق، من الطلب في يوليو إلى فعاليات الجماهير في نوفمبر."},
+    "case.coke.ph": {"en": "[Photo: MIRWASI drum, no FIFA marks]", "ar": "[صورة: طبلة مرواسي، دون علامات FIFA]"},
     "case.tbc.meta": {"en": "[Client] · [Sector] · [Market]", "ar": "[العميل] · [القطاع] · [السوق]"},
     "case.tbc.h": {"en": "[Case study title]", "ar": "[عنوان دراسة الحالة]"},
     "case.tbc.ph": {"en": "[Photo]", "ar": "[صورة]"},
@@ -434,7 +440,7 @@ def builder(lang):
 {ph(t("case." + key + ".ph"), "mid")}
 <p class="meta">{t("case." + key + ".meta")}</p>
 <h3 class="h3">{t("case." + key + ".h")}</h3>
-<p class="sum">{t("case.sum")}</p>
+<p class="sum">{t("case." + key + ".sum") if ("case." + key + ".sum") in STR else t("case.sum")}</p>
 </article>'''
 
     def tile(h, p=""):
@@ -505,7 +511,7 @@ def builder(lang):
 <div><p class="kicker">{t("home.work.k")}</p><h2 id="work-h" class="h2">{t("home.work.h")}</h2></div>
 <a class="link" href="{u("work")}">{t("home.work.all")}</a>
 </div>
-<div class="row mt-l">{case("kenvue", "merch")}{case("henkel", "merch")}{case("mdl", "merch act")}</div>
+<div class="row mt-l">{case("coke", "merch act")}{case("kenvue", "merch")}{case("mdl", "merch act")}</div>
 </div>
 </section>
 {steps()}
@@ -571,7 +577,7 @@ def builder(lang):
 <div class="wrap"><h2 id="awhat-h" class="h2">{t("act.what.h")}</h2><div class="row mt-m" style="gap:16px">{cards}</div><p class="small mt-m">{t("act.partner")}</p></div>
 </section>
 <section class="section bg-white" aria-labelledby="awork-h">
-<div class="wrap"><h2 id="awork-h" class="h2">{t("home.work.k")}</h2><div class="row mt-l">{case("mdl", "merch act")}{case("tbc", "act")}</div></div>
+<div class="wrap"><h2 id="awork-h" class="h2">{t("home.work.k")}</h2><div class="row mt-l">{case("coke", "merch act")}{case("mdl", "merch act")}</div></div>
 </section>
 {doors()}'''
 
@@ -583,7 +589,7 @@ def builder(lang):
 <section class="section">
 <div class="wrap">
 <div class="chips" role="group" aria-label="{t("work.filter")}">{chips}</div>
-<div class="row mt-l" style="row-gap:56px">{case("kenvue", "merch")}{case("henkel", "merch")}{case("mdl", "merch act")}{case("tbc", "posm")}{case("tbc", "posm")}{case("tbc", "act")}</div>
+<div class="row mt-l" style="row-gap:56px">{case("coke", "merch act")}{case("kenvue", "merch")}{case("henkel", "merch")}{case("mdl", "merch act")}{case("tbc", "posm")}{case("tbc", "posm")}</div>
 </div>
 </section>
 {doors()}'''
