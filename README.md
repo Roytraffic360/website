@@ -27,4 +27,5 @@ Source for the Traffik360 website, English and Arabic.
   The master orange is the spot colour PANTONE Orange 021 C. Its RGB alternate in the AI file is #FF5100; the web uses #FF5400
   from the brand sheet. The difference is about 1 Delta E, not visible. Print uses the Pantone, screens use #FF5400.
   Still missing from Studio360: logo without the tagline and a square mark (tracker item 16).
+- Official secondary colour (Studio360, 26 Oct): grey #A9AAAA. Use it for secondary text, captions and thin lines on black, never as a second accent next to orange.
 - Font is FF Clan Pro (decided). The files are Monotype desktop fonts: buy a Monotype web licence before adding them to `site/`.
